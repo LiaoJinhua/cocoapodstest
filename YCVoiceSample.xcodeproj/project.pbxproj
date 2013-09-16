@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2290E4A17E0606400BA75E3 /* YCVoicePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2290E4917E0606400BA75E3 /* YCVoicePlayerTests.m */; };
+		E2290E4C17E0646600BA75E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290E4B17E0646600BA75E3 /* AVFoundation.framework */; };
+		E2290E4E17E0671C00BA75E3 /* welcome.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2290E4D17E0671C00BA75E3 /* welcome.wav */; };
+		E2290E6717E1632300BA75E3 /* YCVoiceConverterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2290E6617E1632300BA75E3 /* YCVoiceConverterTest.m */; };
+		E2290E6917E182CE00BA75E3 /* bubugao.amr in Resources */ = {isa = PBXBuildFile; fileRef = E2290E6817E182CE00BA75E3 /* bubugao.amr */; };
+		E2290EDC17E1B7EB00BA75E3 /* lib_tts_player_device_simulator_iOS4.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290EBD17E1B7EB00BA75E3 /* lib_tts_player_device_simulator_iOS4.3.a */; };
+		E2290EDD17E1B7EB00BA75E3 /* libjtopus_device_simulator_iOS4.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290EBE17E1B7EB00BA75E3 /* libjtopus_device_simulator_iOS4.3.a */; };
+		E2290EDE17E1B7EB00BA75E3 /* libjtspeex_device_simulator_iOS4.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290EBF17E1B7EB00BA75E3 /* libjtspeex_device_simulator_iOS4.3.a */; };
+		E2290EDF17E1B7EB00BA75E3 /* libsys_device_simulator_iOS4.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290EC017E1B7EB00BA75E3 /* libsys_device_simulator_iOS4.3.a */; };
+		E2290EE017E1B7EB00BA75E3 /* libtts_device_simulator_iOS4.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290EC117E1B7EB00BA75E3 /* libtts_device_simulator_iOS4.3.a */; };
+		E2290EE117E1B7EB00BA75E3 /* AccountInfo.txt in Resources */ = {isa = PBXBuildFile; fileRef = E2290EC317E1B7EB00BA75E3 /* AccountInfo.txt */; };
+		E2290EE217E1B7EB00BA75E3 /* Letter_ZhangNan.voclib in Resources */ = {isa = PBXBuildFile; fileRef = E2290EC417E1B7EB00BA75E3 /* Letter_ZhangNan.voclib */; };
+		E2290EE317E1B7EB00BA75E3 /* ZhangNan.voclib in Resources */ = {isa = PBXBuildFile; fileRef = E2290EC517E1B7EB00BA75E3 /* ZhangNan.voclib */; };
+		E2290EE417E1B7EB00BA75E3 /* CommonTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2290EC817E1B7EB00BA75E3 /* CommonTool.mm */; };
+		E2290EE517E1B7EB00BA75E3 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2290ECC17E1B7EB00BA75E3 /* amrFileCodec.mm */; };
+		E2290EE617E1B7EB00BA75E3 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2290ECE17E1B7EB00BA75E3 /* wav.mm */; };
+		E2290EE717E1B7EB00BA75E3 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290ED017E1B7EB00BA75E3 /* libopencore-amrnb.a */; };
+		E2290EE817E1B7EB00BA75E3 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2290ED117E1B7EB00BA75E3 /* libopencore-amrwb.a */; };
+		E2290EE917E1B7EB00BA75E3 /* YCVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2290ED917E1B7EB00BA75E3 /* YCVoiceConverter.mm */; };
+		E2290EEA17E1B7EB00BA75E3 /* YCVoicePlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E2290EDB17E1B7EB00BA75E3 /* YCVoicePlayer.mm */; };
+		E247D61E17E05A9C00E24E71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D61D17E05A9C00E24E71 /* UIKit.framework */; };
+		E247D62017E05A9C00E24E71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D61F17E05A9C00E24E71 /* Foundation.framework */; };
+		E247D62217E05A9C00E24E71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D62117E05A9C00E24E71 /* CoreGraphics.framework */; };
+		E247D62817E05A9C00E24E71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E247D62617E05A9C00E24E71 /* InfoPlist.strings */; };
+		E247D62A17E05A9C00E24E71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E247D62917E05A9C00E24E71 /* main.m */; };
+		E247D62E17E05A9C00E24E71 /* YCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E247D62D17E05A9C00E24E71 /* YCAppDelegate.m */; };
+		E247D63017E05A9C00E24E71 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E247D62F17E05A9C00E24E71 /* Default.png */; };
+		E247D63217E05A9C00E24E71 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E247D63117E05A9C00E24E71 /* Default@2x.png */; };
+		E247D63417E05A9C00E24E71 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E247D63317E05A9C00E24E71 /* Default-568h@2x.png */; };
+		E247D63717E05A9C00E24E71 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247D63517E05A9C00E24E71 /* MainStoryboard_iPhone.storyboard */; };
+		E247D63A17E05A9C00E24E71 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247D63817E05A9C00E24E71 /* MainStoryboard_iPad.storyboard */; };
+		E247D63D17E05A9C00E24E71 /* YCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E247D63C17E05A9C00E24E71 /* YCViewController.m */; };
+		E247D64517E05A9C00E24E71 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D64417E05A9C00E24E71 /* SenTestingKit.framework */; };
+		E247D64617E05A9C00E24E71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D61D17E05A9C00E24E71 /* UIKit.framework */; };
+		E247D64717E05A9C00E24E71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D61F17E05A9C00E24E71 /* Foundation.framework */; };
+		E247D64F17E05A9C00E24E71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E247D64D17E05A9C00E24E71 /* InfoPlist.strings */; };
+		E247D67B17E05E4D00E24E71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D67A17E05E4D00E24E71 /* AudioToolbox.framework */; };
+		E247D67D17E05E5300E24E71 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E247D67C17E05E5300E24E71 /* libstdc++.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E247D64817E05A9C00E24E71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E247D61217E05A9C00E24E71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E247D61917E05A9C00E24E71;
+			remoteInfo = YCVoiceSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2290E4817E0606400BA75E3 /* YCVoicePlayerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCVoicePlayerTests.h; sourceTree = "<group>"; };
+		E2290E4917E0606400BA75E3 /* YCVoicePlayerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCVoicePlayerTests.m; sourceTree = "<group>"; };
+		E2290E4B17E0646600BA75E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E2290E4D17E0671C00BA75E3 /* welcome.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = welcome.wav; path = ../welcome.wav; sourceTree = "<group>"; };
+		E2290E6517E1632300BA75E3 /* YCVoiceConverterTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCVoiceConverterTest.h; sourceTree = "<group>"; };
+		E2290E6617E1632300BA75E3 /* YCVoiceConverterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCVoiceConverterTest.m; sourceTree = "<group>"; };
+		E2290E6817E182CE00BA75E3 /* bubugao.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = bubugao.amr; sourceTree = "<group>"; };
+		E2290EB917E1B7EB00BA75E3 /* hci_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_sys.h; sourceTree = "<group>"; };
+		E2290EBA17E1B7EB00BA75E3 /* hci_tts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_tts.h; sourceTree = "<group>"; };
+		E2290EBB17E1B7EB00BA75E3 /* hci_tts_player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hci_tts_player.h; sourceTree = "<group>"; };
+		E2290EBD17E1B7EB00BA75E3 /* lib_tts_player_device_simulator_iOS4.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib_tts_player_device_simulator_iOS4.3.a; sourceTree = "<group>"; };
+		E2290EBE17E1B7EB00BA75E3 /* libjtopus_device_simulator_iOS4.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjtopus_device_simulator_iOS4.3.a; sourceTree = "<group>"; };
+		E2290EBF17E1B7EB00BA75E3 /* libjtspeex_device_simulator_iOS4.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjtspeex_device_simulator_iOS4.3.a; sourceTree = "<group>"; };
+		E2290EC017E1B7EB00BA75E3 /* libsys_device_simulator_iOS4.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsys_device_simulator_iOS4.3.a; sourceTree = "<group>"; };
+		E2290EC117E1B7EB00BA75E3 /* libtts_device_simulator_iOS4.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtts_device_simulator_iOS4.3.a; sourceTree = "<group>"; };
+		E2290EC317E1B7EB00BA75E3 /* AccountInfo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AccountInfo.txt; sourceTree = "<group>"; };
+		E2290EC417E1B7EB00BA75E3 /* Letter_ZhangNan.voclib */ = {isa = PBXFileReference; lastKnownFileType = file; path = Letter_ZhangNan.voclib; sourceTree = "<group>"; };
+		E2290EC517E1B7EB00BA75E3 /* ZhangNan.voclib */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZhangNan.voclib; sourceTree = "<group>"; };
+		E2290EC717E1B7EB00BA75E3 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		E2290EC817E1B7EB00BA75E3 /* CommonTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CommonTool.mm; sourceTree = "<group>"; };
+		E2290ECB17E1B7EB00BA75E3 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		E2290ECC17E1B7EB00BA75E3 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
+		E2290ECD17E1B7EB00BA75E3 /* wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wav.h; sourceTree = "<group>"; };
+		E2290ECE17E1B7EB00BA75E3 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wav.mm; sourceTree = "<group>"; };
+		E2290ED017E1B7EB00BA75E3 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		E2290ED117E1B7EB00BA75E3 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		E2290ED317E1B7EB00BA75E3 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+		E2290ED417E1B7EB00BA75E3 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		E2290ED617E1B7EB00BA75E3 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		E2290ED717E1B7EB00BA75E3 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		E2290ED817E1B7EB00BA75E3 /* YCVoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCVoiceConverter.h; sourceTree = "<group>"; };
+		E2290ED917E1B7EB00BA75E3 /* YCVoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YCVoiceConverter.mm; sourceTree = "<group>"; };
+		E2290EDA17E1B7EB00BA75E3 /* YCVoicePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCVoicePlayer.h; sourceTree = "<group>"; };
+		E2290EDB17E1B7EB00BA75E3 /* YCVoicePlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = YCVoicePlayer.mm; sourceTree = "<group>"; };
+		E247D61A17E05A9C00E24E71 /* YCVoiceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCVoiceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E247D61D17E05A9C00E24E71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E247D61F17E05A9C00E24E71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E247D62117E05A9C00E24E71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E247D62517E05A9C00E24E71 /* YCVoiceSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YCVoiceSample-Info.plist"; sourceTree = "<group>"; };
+		E247D62717E05A9C00E24E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E247D62917E05A9C00E24E71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E247D62B17E05A9C00E24E71 /* YCVoiceSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCVoiceSample-Prefix.pch"; sourceTree = "<group>"; };
+		E247D62C17E05A9C00E24E71 /* YCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCAppDelegate.h; sourceTree = "<group>"; };
+		E247D62D17E05A9C00E24E71 /* YCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCAppDelegate.m; sourceTree = "<group>"; };
+		E247D62F17E05A9C00E24E71 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E247D63117E05A9C00E24E71 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E247D63317E05A9C00E24E71 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E247D63617E05A9C00E24E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E247D63917E05A9C00E24E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E247D63B17E05A9C00E24E71 /* YCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCViewController.h; sourceTree = "<group>"; };
+		E247D63C17E05A9C00E24E71 /* YCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCViewController.m; sourceTree = "<group>"; };
+		E247D64317E05A9C00E24E71 /* YCVoiceSampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YCVoiceSampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E247D64417E05A9C00E24E71 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E247D64C17E05A9C00E24E71 /* YCVoiceSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YCVoiceSampleTests-Info.plist"; sourceTree = "<group>"; };
+		E247D64E17E05A9C00E24E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E247D67A17E05E4D00E24E71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E247D67C17E05E5300E24E71 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		E247D67E17E05E9C00E24E71 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E247D61717E05A9C00E24E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2290E4C17E0646600BA75E3 /* AVFoundation.framework in Frameworks */,
+				E247D67D17E05E5300E24E71 /* libstdc++.dylib in Frameworks */,
+				E247D67B17E05E4D00E24E71 /* AudioToolbox.framework in Frameworks */,
+				E247D61E17E05A9C00E24E71 /* UIKit.framework in Frameworks */,
+				E247D62017E05A9C00E24E71 /* Foundation.framework in Frameworks */,
+				E247D62217E05A9C00E24E71 /* CoreGraphics.framework in Frameworks */,
+				E2290EDC17E1B7EB00BA75E3 /* lib_tts_player_device_simulator_iOS4.3.a in Frameworks */,
+				E2290EDD17E1B7EB00BA75E3 /* libjtopus_device_simulator_iOS4.3.a in Frameworks */,
+				E2290EDE17E1B7EB00BA75E3 /* libjtspeex_device_simulator_iOS4.3.a in Frameworks */,
+				E2290EDF17E1B7EB00BA75E3 /* libsys_device_simulator_iOS4.3.a in Frameworks */,
+				E2290EE017E1B7EB00BA75E3 /* libtts_device_simulator_iOS4.3.a in Frameworks */,
+				E2290EE717E1B7EB00BA75E3 /* libopencore-amrnb.a in Frameworks */,
+				E2290EE817E1B7EB00BA75E3 /* libopencore-amrwb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E247D63F17E05A9C00E24E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247D64517E05A9C00E24E71 /* SenTestingKit.framework in Frameworks */,
+				E247D64617E05A9C00E24E71 /* UIKit.framework in Frameworks */,
+				E247D64717E05A9C00E24E71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2290EB617E1B7EB00BA75E3 /* YCVoice */ = {
+			isa = PBXGroup;
+			children = (
+				E2290EB717E1B7EB00BA75E3 /* HciCloud2.5.3845 */,
+				E2290EC917E1B7EB00BA75E3 /* VoiceConvert */,
+				E2290ED817E1B7EB00BA75E3 /* YCVoiceConverter.h */,
+				E2290ED917E1B7EB00BA75E3 /* YCVoiceConverter.mm */,
+				E2290EDA17E1B7EB00BA75E3 /* YCVoicePlayer.h */,
+				E2290EDB17E1B7EB00BA75E3 /* YCVoicePlayer.mm */,
+			);
+			path = YCVoice;
+			sourceTree = "<group>";
+		};
+		E2290EB717E1B7EB00BA75E3 /* HciCloud2.5.3845 */ = {
+			isa = PBXGroup;
+			children = (
+				E2290EB817E1B7EB00BA75E3 /* include */,
+				E2290EBC17E1B7EB00BA75E3 /* lib */,
+				E2290EC217E1B7EB00BA75E3 /* ResourceData */,
+				E2290EC617E1B7EB00BA75E3 /* Tool */,
+			);
+			path = HciCloud2.5.3845;
+			sourceTree = "<group>";
+		};
+		E2290EB817E1B7EB00BA75E3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E2290EB917E1B7EB00BA75E3 /* hci_sys.h */,
+				E2290EBA17E1B7EB00BA75E3 /* hci_tts.h */,
+				E2290EBB17E1B7EB00BA75E3 /* hci_tts_player.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E2290EBC17E1B7EB00BA75E3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E2290EBD17E1B7EB00BA75E3 /* lib_tts_player_device_simulator_iOS4.3.a */,
+				E2290EBE17E1B7EB00BA75E3 /* libjtopus_device_simulator_iOS4.3.a */,
+				E2290EBF17E1B7EB00BA75E3 /* libjtspeex_device_simulator_iOS4.3.a */,
+				E2290EC017E1B7EB00BA75E3 /* libsys_device_simulator_iOS4.3.a */,
+				E2290EC117E1B7EB00BA75E3 /* libtts_device_simulator_iOS4.3.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E2290EC217E1B7EB00BA75E3 /* ResourceData */ = {
+			isa = PBXGroup;
+			children = (
+				E2290EC317E1B7EB00BA75E3 /* AccountInfo.txt */,
+				E2290EC417E1B7EB00BA75E3 /* Letter_ZhangNan.voclib */,
+				E2290EC517E1B7EB00BA75E3 /* ZhangNan.voclib */,
+			);
+			path = ResourceData;
+			sourceTree = "<group>";
+		};
+		E2290EC617E1B7EB00BA75E3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E2290EC717E1B7EB00BA75E3 /* CommonTool.h */,
+				E2290EC817E1B7EB00BA75E3 /* CommonTool.mm */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E2290EC917E1B7EB00BA75E3 /* VoiceConvert */ = {
+			isa = PBXGroup;
+			children = (
+				E2290ECA17E1B7EB00BA75E3 /* amrwapper */,
+				E2290ECF17E1B7EB00BA75E3 /* lib */,
+				E2290ED217E1B7EB00BA75E3 /* opencore-amrnb */,
+				E2290ED517E1B7EB00BA75E3 /* opencore-amrwb */,
+			);
+			path = VoiceConvert;
+			sourceTree = "<group>";
+		};
+		E2290ECA17E1B7EB00BA75E3 /* amrwapper */ = {
+			isa = PBXGroup;
+			children = (
+				E2290ECB17E1B7EB00BA75E3 /* amrFileCodec.h */,
+				E2290ECC17E1B7EB00BA75E3 /* amrFileCodec.mm */,
+				E2290ECD17E1B7EB00BA75E3 /* wav.h */,
+				E2290ECE17E1B7EB00BA75E3 /* wav.mm */,
+			);
+			path = amrwapper;
+			sourceTree = "<group>";
+		};
+		E2290ECF17E1B7EB00BA75E3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E2290ED017E1B7EB00BA75E3 /* libopencore-amrnb.a */,
+				E2290ED117E1B7EB00BA75E3 /* libopencore-amrwb.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E2290ED217E1B7EB00BA75E3 /* opencore-amrnb */ = {
+			isa = PBXGroup;
+			children = (
+				E2290ED317E1B7EB00BA75E3 /* interf_dec.h */,
+				E2290ED417E1B7EB00BA75E3 /* interf_enc.h */,
+			);
+			path = "opencore-amrnb";
+			sourceTree = "<group>";
+		};
+		E2290ED517E1B7EB00BA75E3 /* opencore-amrwb */ = {
+			isa = PBXGroup;
+			children = (
+				E2290ED617E1B7EB00BA75E3 /* dec_if.h */,
+				E2290ED717E1B7EB00BA75E3 /* if_rom.h */,
+			);
+			path = "opencore-amrwb";
+			sourceTree = "<group>";
+		};
+		E247D61117E05A9C00E24E71 = {
+			isa = PBXGroup;
+			children = (
+				E2290EB617E1B7EB00BA75E3 /* YCVoice */,
+				E247D62317E05A9C00E24E71 /* YCVoiceSample */,
+				E247D64A17E05A9C00E24E71 /* YCVoiceSampleTests */,
+				E247D61C17E05A9C00E24E71 /* Frameworks */,
+				E247D61B17E05A9C00E24E71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E247D61B17E05A9C00E24E71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E247D61A17E05A9C00E24E71 /* YCVoiceSample.app */,
+				E247D64317E05A9C00E24E71 /* YCVoiceSampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E247D61C17E05A9C00E24E71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2290E4B17E0646600BA75E3 /* AVFoundation.framework */,
+				E247D67E17E05E9C00E24E71 /* libiconv.dylib */,
+				E247D67C17E05E5300E24E71 /* libstdc++.dylib */,
+				E247D67A17E05E4D00E24E71 /* AudioToolbox.framework */,
+				E247D61D17E05A9C00E24E71 /* UIKit.framework */,
+				E247D61F17E05A9C00E24E71 /* Foundation.framework */,
+				E247D62117E05A9C00E24E71 /* CoreGraphics.framework */,
+				E247D64417E05A9C00E24E71 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E247D62317E05A9C00E24E71 /* YCVoiceSample */ = {
+			isa = PBXGroup;
+			children = (
+				E247D62C17E05A9C00E24E71 /* YCAppDelegate.h */,
+				E247D62D17E05A9C00E24E71 /* YCAppDelegate.m */,
+				E247D63517E05A9C00E24E71 /* MainStoryboard_iPhone.storyboard */,
+				E247D63817E05A9C00E24E71 /* MainStoryboard_iPad.storyboard */,
+				E247D63B17E05A9C00E24E71 /* YCViewController.h */,
+				E247D63C17E05A9C00E24E71 /* YCViewController.m */,
+				E247D62417E05A9C00E24E71 /* Supporting Files */,
+			);
+			path = YCVoiceSample;
+			sourceTree = "<group>";
+		};
+		E247D62417E05A9C00E24E71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E247D62517E05A9C00E24E71 /* YCVoiceSample-Info.plist */,
+				E247D62617E05A9C00E24E71 /* InfoPlist.strings */,
+				E247D62917E05A9C00E24E71 /* main.m */,
+				E247D62B17E05A9C00E24E71 /* YCVoiceSample-Prefix.pch */,
+				E247D62F17E05A9C00E24E71 /* Default.png */,
+				E247D63117E05A9C00E24E71 /* Default@2x.png */,
+				E247D63317E05A9C00E24E71 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E247D64A17E05A9C00E24E71 /* YCVoiceSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2290E6817E182CE00BA75E3 /* bubugao.amr */,
+				E2290E4D17E0671C00BA75E3 /* welcome.wav */,
+				E2290E4817E0606400BA75E3 /* YCVoicePlayerTests.h */,
+				E2290E4917E0606400BA75E3 /* YCVoicePlayerTests.m */,
+				E2290E6517E1632300BA75E3 /* YCVoiceConverterTest.h */,
+				E2290E6617E1632300BA75E3 /* YCVoiceConverterTest.m */,
+				E247D64B17E05A9C00E24E71 /* Supporting Files */,
+			);
+			path = YCVoiceSampleTests;
+			sourceTree = "<group>";
+		};
+		E247D64B17E05A9C00E24E71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E247D64C17E05A9C00E24E71 /* YCVoiceSampleTests-Info.plist */,
+				E247D64D17E05A9C00E24E71 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E247D61917E05A9C00E24E71 /* YCVoiceSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E247D65517E05A9C00E24E71 /* Build configuration list for PBXNativeTarget "YCVoiceSample" */;
+			buildPhases = (
+				E247D61617E05A9C00E24E71 /* Sources */,
+				E247D61717E05A9C00E24E71 /* Frameworks */,
+				E247D61817E05A9C00E24E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YCVoiceSample;
+			productName = YCVoiceSample;
+			productReference = E247D61A17E05A9C00E24E71 /* YCVoiceSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E247D64217E05A9C00E24E71 /* YCVoiceSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E247D65817E05A9C00E24E71 /* Build configuration list for PBXNativeTarget "YCVoiceSampleTests" */;
+			buildPhases = (
+				E247D63E17E05A9C00E24E71 /* Sources */,
+				E247D63F17E05A9C00E24E71 /* Frameworks */,
+				E247D64017E05A9C00E24E71 /* Resources */,
+				E247D64117E05A9C00E24E71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E247D64917E05A9C00E24E71 /* PBXTargetDependency */,
+			);
+			name = YCVoiceSampleTests;
+			productName = YCVoiceSampleTests;
+			productReference = E247D64317E05A9C00E24E71 /* YCVoiceSampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E247D61217E05A9C00E24E71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Yongche;
+			};
+			buildConfigurationList = E247D61517E05A9C00E24E71 /* Build configuration list for PBXProject "YCVoiceSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E247D61117E05A9C00E24E71;
+			productRefGroup = E247D61B17E05A9C00E24E71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E247D61917E05A9C00E24E71 /* YCVoiceSample */,
+				E247D64217E05A9C00E24E71 /* YCVoiceSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E247D61817E05A9C00E24E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247D62817E05A9C00E24E71 /* InfoPlist.strings in Resources */,
+				E247D63017E05A9C00E24E71 /* Default.png in Resources */,
+				E247D63217E05A9C00E24E71 /* Default@2x.png in Resources */,
+				E247D63417E05A9C00E24E71 /* Default-568h@2x.png in Resources */,
+				E247D63717E05A9C00E24E71 /* MainStoryboard_iPhone.storyboard in Resources */,
+				E247D63A17E05A9C00E24E71 /* MainStoryboard_iPad.storyboard in Resources */,
+				E2290EE117E1B7EB00BA75E3 /* AccountInfo.txt in Resources */,
+				E2290EE217E1B7EB00BA75E3 /* Letter_ZhangNan.voclib in Resources */,
+				E2290EE317E1B7EB00BA75E3 /* ZhangNan.voclib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E247D64017E05A9C00E24E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247D64F17E05A9C00E24E71 /* InfoPlist.strings in Resources */,
+				E2290E4E17E0671C00BA75E3 /* welcome.wav in Resources */,
+				E2290E6917E182CE00BA75E3 /* bubugao.amr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E247D64117E05A9C00E24E71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E247D61617E05A9C00E24E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247D62A17E05A9C00E24E71 /* main.m in Sources */,
+				E247D62E17E05A9C00E24E71 /* YCAppDelegate.m in Sources */,
+				E247D63D17E05A9C00E24E71 /* YCViewController.m in Sources */,
+				E2290EE417E1B7EB00BA75E3 /* CommonTool.mm in Sources */,
+				E2290EE517E1B7EB00BA75E3 /* amrFileCodec.mm in Sources */,
+				E2290EE617E1B7EB00BA75E3 /* wav.mm in Sources */,
+				E2290EE917E1B7EB00BA75E3 /* YCVoiceConverter.mm in Sources */,
+				E2290EEA17E1B7EB00BA75E3 /* YCVoicePlayer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E247D63E17E05A9C00E24E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2290E4A17E0606400BA75E3 /* YCVoicePlayerTests.m in Sources */,
+				E2290E6717E1632300BA75E3 /* YCVoiceConverterTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E247D64917E05A9C00E24E71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E247D61917E05A9C00E24E71 /* YCVoiceSample */;
+			targetProxy = E247D64817E05A9C00E24E71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E247D62617E05A9C00E24E71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E247D62717E05A9C00E24E71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E247D63517E05A9C00E24E71 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E247D63617E05A9C00E24E71 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E247D63817E05A9C00E24E71 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E247D63917E05A9C00E24E71 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E247D64D17E05A9C00E24E71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E247D64E17E05A9C00E24E71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E247D65317E05A9C00E24E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E247D65417E05A9C00E24E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E247D65617E05A9C00E24E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YCVoiceSample/YCVoiceSample-Prefix.pch";
+				INFOPLIST_FILE = "YCVoiceSample/YCVoiceSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/YCVoice/HciCloud2.5.3845/lib\"",
+					"\"$(SRCROOT)/YCVoice/VoiceConvert/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E247D65717E05A9C00E24E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YCVoiceSample/YCVoiceSample-Prefix.pch";
+				INFOPLIST_FILE = "YCVoiceSample/YCVoiceSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/YCVoice/HciCloud2.5.3845/lib\"",
+					"\"$(SRCROOT)/YCVoice/VoiceConvert/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E247D65917E05A9C00E24E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YCVoiceSample.app/YCVoiceSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YCVoiceSample/YCVoiceSample-Prefix.pch";
+				INFOPLIST_FILE = "YCVoiceSampleTests/YCVoiceSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E247D65A17E05A9C00E24E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YCVoiceSample.app/YCVoiceSample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YCVoiceSample/YCVoiceSample-Prefix.pch";
+				INFOPLIST_FILE = "YCVoiceSampleTests/YCVoiceSampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E247D61517E05A9C00E24E71 /* Build configuration list for PBXProject "YCVoiceSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247D65317E05A9C00E24E71 /* Debug */,
+				E247D65417E05A9C00E24E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E247D65517E05A9C00E24E71 /* Build configuration list for PBXNativeTarget "YCVoiceSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247D65617E05A9C00E24E71 /* Debug */,
+				E247D65717E05A9C00E24E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E247D65817E05A9C00E24E71 /* Build configuration list for PBXNativeTarget "YCVoiceSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E247D65917E05A9C00E24E71 /* Debug */,
+				E247D65A17E05A9C00E24E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E247D61217E05A9C00E24E71 /* Project object */;
+}
